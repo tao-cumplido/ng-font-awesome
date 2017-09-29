@@ -1,0 +1,17 @@
+{
+  "name": "ng-font-awesome",
+  "version": "0.0.1",
+  "author": "tao",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^4.4.4",
+    "@angular/core": "^4.4.4",
+    "@angular/platform-browser": "^4.4.4",
+    "font-awesome": "^4.7.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^4.4.0-RC.0",
+    "@angular/core": "^4.4.0-RC.0",
+    "@angular/platform-browser": "^4.4.0-RC.0"
+  }
+}
