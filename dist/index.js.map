@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":";;AAAA,6CAAoD;AAA3C,4CAAA,mBAAmB,CAAA;AAC5B,mDAAsD;AAA7C,kCAAA,MAAM,CAAA;AAAE,sCAAA,UAAU,CAAA","sourcesContent":["export { NgFontAwesomeModule } from './ngfa.module';\r\nexport { FaIcon, FaListIcon } from './ngfa.component';\r\n"]}

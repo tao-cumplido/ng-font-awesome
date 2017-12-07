@@ -1,8 +1,8 @@
 import { Component, ElementRef, Input, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
-type FaSize = '1x' | 'lg' | '2x' | '3x' | '4x' | '5x';
-type FaAnimation = 'none' | 'spin' | 'pulse';
+export type FaSize = '1x' | 'lg' | '2x' | '3x' | '4x' | '5x';
+export type FaAnimation = 'none' | 'spin' | 'pulse';
 
 @Component({
     selector: 'fa',
@@ -21,7 +21,7 @@ export class FaIcon {
 
     constructor(protected sanitizer: DomSanitizer) {}
 
-    transform() {
+    transform(): SafeStyle {
         if (this.animation !== 'none') return 'none';
 
         let r = (360 + this.rotate) % 360;

@@ -1,7 +1,7 @@
 import 'font-awesome/css/font-awesome.min.css';
 
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { FaIcon, FaListIcon } from './ngfa.component';
 

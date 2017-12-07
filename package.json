@@ -1,17 +1,26 @@
 {
   "name": "ng-font-awesome",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "tao",
   "license": "MIT",
-  "dependencies": {
-    "@angular/common": "^4.4.4",
-    "@angular/core": "^4.4.4",
-    "@angular/platform-browser": "^4.4.4",
-    "font-awesome": "^4.7.0"
+  "main": "dist/index.js",
+  "scripts": {
+    "transpile": "ngc"
   },
   "peerDependencies": {
-    "@angular/common": "^4.4.0-RC.0",
-    "@angular/core": "^4.4.0-RC.0",
-    "@angular/platform-browser": "^4.4.0-RC.0"
+    "@angular/common": "^5.1.0",
+    "@angular/core": "^5.1.0",
+    "@angular/platform-browser": "^5.1.0",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^5.1.0",
+    "@angular/compiler": "^5.1.0",
+    "@angular/compiler-cli": "^5.1.0",
+    "@angular/core": "^5.1.0",
+    "@angular/platform-browser": "^5.1.0",
+    "font-awesome": "^4.7.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
   }
 }
