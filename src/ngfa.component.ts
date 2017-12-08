@@ -7,8 +7,11 @@ export type FaAnimation = 'none' | 'spin' | 'pulse';
 @Component({
     selector: 'fa',
     styles: [':host { display: inline-block }'],
-    template: `<span class="fa fa-{{icon}} fa-{{size}} fa-{{animation}}"
-                     [ngClass]="{ 'fa-fw': fixed }" [style.transform]="transform()"></span>`
+    template: `
+<span class="fa fa-{{icon}} fa-{{size}} fa-{{animation}}"
+      [ngClass]="{ 'fa-fw': fixed }" [style.transform]="transform()">
+</span>
+`
 })
 export class FaIcon {
     @Input() icon: string;
@@ -38,9 +41,12 @@ export class FaIcon {
 @Component({
     selector: 'fa-li',
     styles: [':host { display: list-item; position: relative }'],
-    template: `<span class="fa fa-li fa-{{icon}} fa-{{size}} fa-{{animation}}"
-                     [ngClass]="{ 'fa-fw': fixed }" [style.transform]="transform()"></span>
-    <ng-content></ng-content>`
+    template: `
+<span class="fa fa-li fa-{{icon}} fa-{{size}} fa-{{animation}}"
+      [ngClass]="{ 'fa-fw': fixed }" [style.transform]="transform()">
+</span>
+<ng-content></ng-content>
+`
 })
 export class FaListIcon extends FaIcon implements OnInit {
 
